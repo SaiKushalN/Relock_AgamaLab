@@ -14,7 +14,9 @@
             "authorization"
         ],
         "noDirectLaunch": [],
-        "configs": {},
+        "configs": {
+            "co.relock.adaptiveLogin": {}
+        },
         "name": "adaptive-auth-flow"
     }
 }
