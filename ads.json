@@ -14,9 +14,7 @@
             "authorization"
         ],
         "noDirectLaunch": [],
-        "configs": {
-            "adaptive.login": {}
-        },
+        "configs": {},
         "name": "adaptive-auth-flow"
     }
 }
