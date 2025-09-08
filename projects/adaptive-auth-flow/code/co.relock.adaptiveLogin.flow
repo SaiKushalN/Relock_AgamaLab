@@ -1,2 +1,14 @@
 Flow co.relock.adaptiveLogin
      Basepath ""
+clicked = RRF "prelogin.ftlh" 
+riskHigh = false
+When riskHigh is true
+Otherwise
+     pwTries = Repeat 5 times max
+          credentials = RRF "password.ftlh" 
+          valid = Call AuthLib#validateCredentials credentials
+          When valid is false
+          Otherwise
+               Quit When valid is false
+     it_zihoh = {success:true, data: { userId: "credentials", property1: "username"}}
+     Finish it_zihoh
