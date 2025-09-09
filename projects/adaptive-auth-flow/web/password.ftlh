@@ -20,11 +20,6 @@
         <p class="leading-normal text-gray-600">Enter your username and password</p>
       </div>
 
-      &lt;#-- Optional: show an error message on retry if the flow sets formError --&gt;
-      &lt;#if formError??&gt;
-        <p class="mt-3 text-red-600 text-center">${formError}</p>
-      <!--#if-->
-
       <form method="post" class="my-8 space-y-4">
         <div>
           <label for="username" class="block text-gray-700 text-sm mb-1">Username</label>
