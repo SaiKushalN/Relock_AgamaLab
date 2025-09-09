@@ -1,0 +1,21 @@
+Flow co.relock.adaptiveLogin
+     Basepath ""
+clicked = RRF "prelogin.ftlh" 
+riskHigh = false
+When riskHigh is false
+     Repeat 3 times max
+          creds = RRF "password.ftlh" 
+          ok = Call AuthLib#validateCredentials creds
+          When ok is true
+               Finish creds.username
+     it_ttljw = {success:false, error: "Exceeded password attempts"}
+     Finish it_ttljw
+Otherwise
+     Repeat 3 times max
+          both = RRF "password_otp.ftlh" 
+          pwOk = Call AuthLib#validateCredentials both
+          otpOk = Call AuthLib#validateOtp both
+          When pwOk is true and otpOk is true
+               Finish both.username
+     it_ssbwr = {success:false, error: "Exceeded Password and OTP attempts"}
+     Finish it_ssbwr

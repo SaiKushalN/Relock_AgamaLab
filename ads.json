@@ -1,0 +1,61 @@
+{
+    "adaptive-auth-flow": {
+        "projectName": "adaptive-auth-flow",
+        "description": "This project is for initial screening with Relock.",
+        "type": "community",
+        "author": "SaiKushalN",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "githubUri": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "license": "apache-2.0",
+        "lastUpdated": "1757289102491",
+        "tags": [
+            "authentication",
+            "authorization"
+        ],
+        "noDirectLaunch": [],
+        "configs": {
+            "co.relock.adaptiveLogin": {},
+            "": {}
+        },
+        "name": "adaptive-auth-flow"
+    },
+    "username_password_authentication": {
+        "projectName": "username_password_authentication",
+        "description": "username_password_authentication base flow",
+        "type": "community",
+        "author": "SaiKushalN",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "githubUri": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "license": "apache-2.0",
+        "lastUpdated": "1757379342973",
+        "tags": [
+            "openid-connect"
+        ],
+        "noDirectLaunch": [],
+        "configs": {
+            "co.acme.password": {}
+        },
+        "name": "username_password_authentication"
+    },
+    "relock.adaptive.auth": {
+        "projectName": "relock.adaptive.auth",
+        "description": "Adaptive Auth Flow",
+        "type": "community",
+        "author": "SaiKushalN",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "githubUri": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "license": "apache-2.0",
+        "lastUpdated": "1757384571524",
+        "tags": [
+            "authentication"
+        ],
+        "noDirectLaunch": [],
+        "configs": {
+            "adaptive.auth.test": {}
+        },
+        "name": "relock.adaptive.auth"
+    }
+}
