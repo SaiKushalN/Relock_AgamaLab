@@ -8,8 +8,8 @@ When riskHigh is false
           ok = Call AuthLib#validateCredentials creds
           When ok is true
                Finish creds.username
-     it_hgbzj = {success:false, error: "Exceeded password attempts"}
-     Finish it_hgbzj
+     it_ttljw = {success:false, error: "Exceeded password attempts"}
+     Finish it_ttljw
 Otherwise
      Repeat 3 times max
           both = RRF "password_otp.ftlh" 
@@ -17,5 +17,5 @@ Otherwise
           otpOk = Call AuthLib#validateOtp both
           When pwOk is true and otpOk is true
                Finish both.username
-     it_qrxfe = {success:false, error: "Exceeded Password and OTP attempts"}
-     Finish it_qrxfe
+     it_ssbwr = {success:false, error: "Exceeded Password and OTP attempts"}
+     Finish it_ssbwr
