@@ -1,7 +1,7 @@
 [#ftl output_format="HTML"]
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sign in</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"></head>
+<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sign in</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"></head>
 <body>
 
 
@@ -9,31 +9,39 @@
   
   
   
+  
 
 
-  <div class="bg-white shadow rounded p-8 w-full max-w-sm">
-    <h1 class="text-2xl font-semibold text-center">Sign in</h1>
-
-    &lt;#-- Optional message set by the flow before retry --&gt;
-    &lt;#if formError??&gt;
-      <p class="mt-3 text-red-600 text-center">${formError}</p>
-    <!--#if-->
-
-    <form method="post" class="mt-6 space-y-4">
-      <div>
-        <label for="username" class="block text-sm text-gray-700">Username</label>
-        <input id="username" name="username" required="" autofocus="" autocomplete="username" class="mt-1 w-full border border-gray-300 rounded px-3 py-2 focus:border-green-600">
+  <div class="md:h-screen bg-white flex flex-col justify-center items-center">
+    <div class="md:border md:border-gray-300 bg-white md:shadow-lg rounded p-10 w-full max-w-md">
+      <div class="flex flex-col items-center space-y-3">
+        <img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" alt="Gluu">
+        <span class="text-2xl font-semibold leading-normal">Sign in</span>
+        <p class="leading-normal text-gray-600">Enter your username and password</p>
       </div>
 
-      <div>
-        <label for="password" class="block text-sm text-gray-700">Password</label>
-        <input id="password" name="password" type="password" required="" autocomplete="current-password" class="mt-1 w-full border border-gray-300 rounded px-3 py-2 focus:border-green-600">
-      </div>
+      &lt;#-- Optional: show an error message on retry if the flow sets formError --&gt;
+      &lt;#if formError??&gt;
+        <p class="mt-3 text-red-600 text-center">${formError}</p>
+      <!--#if-->
 
-      <button type="submit" class="w-full py-2 rounded text-white bg-green-600 hover:bg-green-700">
-        Continue
-      </button>
-    </form>
+      <form method="post" class="my-8 space-y-4">
+        <div>
+          <label for="username" class="block text-gray-700 text-sm mb-1">Username</label>
+          <input type="text" id="username" name="username" required="" autofocus="" autocomplete="username" class="w-full rounded px-3 border border-gray-300 py-2 focus:border-green-700">
+        </div>
+        <div>
+          <label for="password" class="block text-gray-700 text-sm mb-1">Password</label>
+          <input type="password" id="password" name="password" required="" autocomplete="current-password" class="w-full rounded px-3 border border-gray-300 py-2 focus:border-green-700">
+        </div>
+
+        <div class="text-sm flex justify-center items-center">
+          <button type="submit" class="py-2 px-6 rounded text-white bg-green-500 hover:bg-green-600">
+            Continue
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 
 </body>
