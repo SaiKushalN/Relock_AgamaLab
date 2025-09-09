@@ -33,6 +33,9 @@
             "openid-connect"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "co.acme.password": {}
+        },
+        "name": "username_password_authentication"
     }
 }
