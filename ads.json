@@ -37,5 +37,21 @@
             "co.acme.password": {}
         },
         "name": "username_password_authentication"
+    },
+    "relock.adaptive.auth": {
+        "projectName": "relock.adaptive.auth",
+        "description": "Adaptive Auth Flow",
+        "type": "community",
+        "author": "SaiKushalN",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "githubUri": "https://github.com/SaiKushalN/Relock_AgamaLab",
+        "license": "apache-2.0",
+        "lastUpdated": "1757384571524",
+        "tags": [
+            "authentication"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
