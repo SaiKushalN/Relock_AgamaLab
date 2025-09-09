@@ -52,6 +52,9 @@
             "authentication"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "adaptive.auth.test": {}
+        },
+        "name": "relock.adaptive.auth"
     }
 }
